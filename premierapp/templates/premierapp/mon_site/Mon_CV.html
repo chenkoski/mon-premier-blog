@@ -1,0 +1,326 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Mon CV</title>
+	<meta charset="utf-8">
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+	<script src="scripts/mes_scripts.js"></script>
+	<!--[if IE 7]>
+		<link href="css/ie7.css" rel="stylesheet" type="text/css">
+	<![endif]-->
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			<div id="header"> <a href="index.html" id="logo"><img src="images/logo.png" width="300" height="60" alt="mon logo"></a>
+				<ul class="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
+						<a class="active" href="Mon_CV.html">Mon CV</a>
+					</li>
+				</ul>
+			</div>
+			<!-- start of body-->
+			<div id="body_cv">
+				<div id="content_cv">
+					<div id="titre_cv">
+					<h2>Curriculum Vitae</br></br></h2>
+					</div>
+					<div id="domaineCompetences" onclick='hideMeByClass("competences")'>
+					<h2>Domaines de compétences</h2>
+
+					</div>
+						<ul class="competences">
+
+							<li>Signalisation Ferroviaire</li>
+
+							<li>Sûreté de Fonctionnement (RAMS / FMDS)</li>
+
+							<li>Systèmes Électriques / Électroniques</li>
+						</ul>
+					<div id="secteur" onclick='hideMeByClass("secteur")'>	
+					<h2>Secteur</h2>
+					</div>
+						<ul class="secteur">
+							<li>Ferroviaire</li>
+						</ul>
+					<div id="EnvironnementTechnique" onclick='hideMeByClass("Environnement_Technique")'>
+					<h2>Environnement Technique</h2>
+					</div>
+					<ul class="Environnement_Technique">
+					
+						<li><h5>Langages :</h5><span class="environnement">C, Python, HLL, Grafcet, Ladder, VBA, Matlab, HTML/CSS/JavaScript</span></li>
+
+						<li><h5>Systèmes d’exploitation :</h5><span class="environnement">Windows, Linux.</span></li>
+
+						<li><h5>Matériels :</h5><span class="environnement">PC, Raspberry Pi (Linux),  Microcontrôleurs (PIC 18F, MSP 430, Cortex M4F), Automate Programmable Industriel.</span></li>
+
+						<li><h5>Méthodologie :</h5><span class="environnement">Sûreté de Fonctionnement (APR, AMDEC, Arbres de Défaillance), Cycle en V.</span> </li>
+						
+						<li><h5>Normes: </h5><span class="environnement">EN 50126,  EN 50128, EN 50129, ISO 9001.</span></li>
+
+
+						<li><h5>Certifications & Habilitations :</h5><span class="environnement">Risques Electriques,  ETCS / ERTMS (Cours fondamental et avancé)</span></li>
+					</ul>
+					
+					<div id="ExpePro" onclick='hideMeById("experience")'>
+					<h2>Expérience professionnelle</h2>
+					</div>
+					<div id="experience">
+							<div id="experience1">
+								<div id="periode1">
+								<p>Depuis 01/2015</p>
+								</div>
+								<div id="description1">
+								<h4>ANSALDO STS</h4>
+									<h5>Projet</h5>
+									<p id="ansaldo" onmouseover ='hideMeById("ansaldo")'>ANSALDO STS fournit les systèmes d’enclenchements ERTMS de niveau 2 dans le cadre du projet Suédois ESTER. (ERTMS-System för Total ERsättning av äldre system).</p>
+									<h5>Descriptif</h5>
+									<p>L’activité réalisée concerne la vérification du respect par Ansaldo STS, lors du développement des systèmes d’enclenchements, des spécifications (SRS) fournies par l'Administration nationale suédoise des Transports (Trafikverket).</p>
+									<p>Tâches réalisées : </p>
+									<ul>
+										<li>Vérification de la conformité des spécifications fonctionnelles et d’interface par rapport à la SRS.</li>
+										<li>Vérification de la couverture des Exigences de Sécurité par les Spécifications des Exigences du Logiciel.</li>
+										<li>Vérification de la conformité des planches SCADE par rapport aux exigences fonctionnelles et vérification du respect des règles d’implémentation.</li>
+										<li>Vérification de la traçabilité verticale  de toutes les exigences logicielles du système d’enclenchement  sous DimensionRM et du respect de la norme européenne EN50128.</li>
+										<li>Rédaction des différents Rapports de Vérification et reporting des activités.</li>
+									</ul>
+									<h5>Environnement Technique</h5>
+									
+									<ul>
+										<li>Windows, MS Office, DimensionRM.</li>
+										<li>Norme EN 50128, EN 50126</li>
+									</ul>
+								</div>
+							</div>
+							<div id="experience2">
+								<div id="periode2">
+								<p>De 04/2014 à 12/2014</p>
+								</div>
+								<div id="description2">
+								<h4>ANSALDO STS</h4>
+									<h5>Projet</h5>
+									<p>Dans le cadre du développement des projets EUROCAB, ANSALDO STS fournit les calculateurs Bord permettant d’assurer les fonctions CAB SIGNAL et ATP. </p>
+									<h5>Descriptif</h5>
+									<p>L’activité réalisée concerne la vérification du développement de l’EUROCAB sur l’ensemble du cycle en V (Système et Logiciel) pour les projets ETCS suivants : </p>
+										<ul>
+											<li>EUROCAB VELARO</li>
+											<li>Bi-Standard ERTMS / TVM (SNCF)</li>
+											<li>EUROCAB Bi-Standard (base générique servant les projets EUROCAB VELARO et Bi-Standard ERTMS/TVM (SNCF)</li>
+										</ul>
+									<p>Tâches réalisées :</p>
+									<ul>
+										<li>Rédaction de Rapports de Vérification des Exigences des différents modules ERTMS.</li>
+										<li>Vérification de la conformité des Spécifications de Tests du Logiciel avec les Spécifications des Exigences du Logiciel.</br>
+											(Analyse  réalisée en delta  sur les exigences : exigences modifiées, ajoutées, supprimées).</li>
+										<li>Vérification de la conformité des Spécifications de tests de validation Système avec  les exigences Système. </li>										
+									</ul>
+									
+									<h5>Environnement Technique</h5>
+									<ul>
+										<li>Windows, MS Office</li>
+										<li>Norme EN 50128, EN 50126</li>
+									</ul>
+								</div>
+							</div>
+							<div id="experience3">
+								<div id="periode3">
+								<p>De 03/2014 à 04/2014</p>
+								</div>
+								<div id="description3">
+								<h4>ALSTOM TRANSPORT</h4>
+									<h5>Projet</h5>
+									<p>Dans le cadre du projet CITADIS EVOLUTION 2, vérification du logiciel contrôlant le système de traction de tramway.</p>
+									<h5>Descriptif</h5>
+									<ul>
+										<li>Vérification de la conformité des Spécifications de Tests du Logiciel avec les Spécifications des Exigences du Logiciel.</li>
+										<li>Vérification de la couverture des Exigences de Sécurité par les Spécifications des      Exigences du Logiciel</li>
+									</ul>
+									<h5>Environnement Technique</h5>
+									<ul>
+										<li>Windows, MS Office</li>
+									</ul>
+								</div>
+							</div>
+							<div id="experience4">
+								<div id="periode4">
+								<p>De 11/2013 à 03/2014</p>
+								</div>
+								<div id="description4">
+								<h4>ANSALDO STS</h4>
+									<h5>Projet</h5>
+									<p>Dans le cadre de nombreux projets de signalisation auxquels participe Ansaldo STS avec le système CBTC (Communication Based Train Control), développé en collaboration étroite avec les principaux exploitants de réseaux ferrés internationaux</p>
+									<h5>Descriptif</h5>
+									<ul>
+										<li>Réalisation d’activités de vérification concernant les phases de Spécification des Exigences du Système et Intégration du Logiciel dans le respect de la norme EN 50128.</li>
+										<li>Création et mise à jour d’outils d’aide à la vérification de la traçabilité des exigences.</li>
+									</ul>
+									<h5>Environnement Technique</h5>
+									<ul>
+										<li>Windows, MS Office, VBA</li>
+										<li>Application de la norme EN 50128</li>
+									</ul>
+								</div>
+							</div>
+							<div id="experience5">
+								<div id="periode5">
+								<p>De 08/2013 à 10/2013</p>
+							
+								</div>
+								<div id="description5">
+								<h4>ALSTOM TIS – ST-OUEN</h4>
+									<h5>Projet</h5>
+									<p>Le projet CNM (Contournement ferroviaire de Nîmes et Montpellier) consiste en la conception d’une ligne nouvelle destinée à accueillir les circulations de trains de voyageurs et de marchandises. (Première ligne à grande vitesse dite « mixte », fret et passagers.)</br> Ma mission au sein de l’équipe RAMS d’ASSYSTEM France :</p>
+									<p>Réalisation d’une Analyse Elémentaire de Risques (AER) du sous-système de signalisation.</p> 
+
+									<h5>Descriptif</h5>
+									<ul>
+										<li>Identification des situations dangereuses relatives au sous-système de signalisation de CNM (Analyse des différents équipements présents sur CNM : Slok 2006, KVB, BAL, ETCS1, Détecteurs…)</li>
+										<li>L'analyse des dangers et l'identification de mesures de réduction de risques.</li>
+										<li>Sélection du mode de traitement pour chaque danger / risque identifié, (code de pratique, système de référence, évaluation explicite ainsi que la justification de la stratégie de contrôle du risque.</li>
+										<li>Couverture / traçabilité de l’AER Projet avec l’APR Système.</li>
+									</ul>
+									<h5>Environnement Technique</h5>
+									<ul>
+										<li>Windows, MS Office, VBA</li>
+										<li>Application des normes EN 50128 et EN 50126</li>
+									</ul>
+									
+								</div>
+							</div>
+							<div id="experience6">
+								<div id="periode6">
+								<p>De 02/2013 à 07/2013</p>
+							
+								</div>
+								<div id="description6">
+								<h4>ICAM - Lille</h4>
+									<h5>Projet</h5>
+									<p>Dans le cadre du projet i-MOCCA (Interregional MObility and Competence Centres in Automation) dont le but est la  création de centres de  compétences dans les domaines de la transmission de données industrielles et des systèmes embarqués, dans les régions Nord-Pas de Calais ,  Champagne-Ardenne, Picardie en France et Wallonie / Flandre en Belgique, la mission consiste en :
+									<ul>
+
+										<li>L’étude de la sureté de fonctionnement d’un système de détection de quai. </br>
+										(Solution à la problématique Quai court / Train long).</li>
+										<li>La mise en place d’un démonstrateur ferroviaire pour illustrer cette problématique.</li>
+									</ul>
+									</p> 
+
+									<h5>Descriptif</h5>
+									<ul>
+										<li>Réalisation de l’Analyse Fonctionnelle du Système.</li>
+										<li>Réalisation de l’Analyse Préliminaire des Risques.</li>
+										<li>Analyse par Arbres de Défaillances, AMDEC. </li>
+										<li>Respect des normes européennes : EN50126, EN50128 and EN50129.</li>
+									</ul>
+									<h5>Environnement Technique</h5>
+									<ul>
+										<li>Windows, Linux, Code Composer Studio (Texas Instruments), IAR Embedded Workbench, MS Office, MS Project.</li>
+										
+									</ul>
+									
+								</div>
+							</div>
+						
+					</div>
+					<div id="formationEtDiplomes" onclick='hideMeById("formation")'>
+					<h2>Formation et Diplômes</h2>
+					</div>
+						
+						<div id="formation">
+							<ul>
+								<li><span class="annee">2012 - 2013</span> 	<span class="diplome">: Mastère Spécialisé en Génie Ferroviaire - <span class="ecole">ICAM Lille</span></span></li>
+								<li><span class="annee">2010 - 2011</span> 	<span class="diplome">: Master 2 - Gestion de Réseaux d’Energie Electrique - <span class="ecole">Lille 1</span></span></li>
+								<li><span class="annee">2009 - 2010</span>	<span class="diplome">: Maitrise -  Automatique et Systèmes Electriques - <span class="ecole">Lille 1</span></span></li>
+								<li><span class="annee">2008 - 2009</span> 	<span class="diplome">: Licence - Systèmes Embarqués dans les Transports - <span class="ecole">Université Jules Verne d’Amiens</span></span></li>
+								<li><span class="annee">2006 - 2008</span> 	<span class="diplome">: DEUG -  Sciences pour Ingénieurs - <span class="ecole">Université Jules Verne d’Amiens</span></span></li>
+								<li><span class="annee">	   2006</span> 	<span class="diplome">: Baccalauréat option Math-Physique au <span class="ecole">Lycée de Kigali</span> avec mention : "Distinction"</span></li>
+							
+							</ul>
+						</div>
+					
+
+					<div id="languesPratiquees" onclick='hideMeById("langues")'>					
+					<h2>Langues pratiquées</h2>
+					</div>
+					
+					<div id="langues">
+							<ul>
+								<li><span class="langue">Français</span> 	<span class="niveau">: lu, écrit, parlé, courant</span></li>
+								<li><span class="langue">Anglais</span> 	<span class="niveau">: lu, écrit, parlé, courant (Score TOEIC : 900)</span></li>
+								<li><span class="langue">Russe</span>	<span class="niveau">: lu, écrit, parlé, bilingue</span></li>
+								<li><span class="langue">Kinyarwanda</span> 	<span class="niveau">: lu, écrit, parlé, bilingue</span></li>
+								<li><span class="langue">Swahilli</span> 	<span class="niveau">: lu, parlé, intermédiaire</span></li>
+															
+							</ul>
+					</div>
+					<div id="centresInteret" onclick='hideMeById("hobbies")'>
+					<h2>Centres d'intérêt</h2>
+					</div>
+					
+					<div id="hobbies">
+					
+						<ul>
+							<li>Développement Web</li>
+							<li>Cinéma</li>
+							<li>Photographie</li>
+							<li>Musique</li>
+							<li>Littérature :  Scientifique et Technique, Biographie, Fiction</li>
+							<li>Football en salle</li>
+							<li>VTT</li>							
+						</ul>
+										
+					
+					</p>
+					</div>
+				</div>
+				
+			</div>
+			<!-- end of body-->
+			<div id="footer">
+				<div>
+					<div class="header"> <a href="index.html"><img class="logo" src="images/logo2.png" width="187" height="37" alt="mon logo"></a>
+						<ul class="connect">
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/facebook/" class="facebook">&nbsp;</a>
+							</li>
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/twitter/" class="twitter">&nbsp;</a>
+							</li>
+							<li>
+								<a href="http://www.freewebsitetemplates.com/go/googleplus/" class="googleplus">&nbsp;</a>
+							</li>
+						</ul>
+					</div>
+					<div class="body">
+						<ul class="navigation">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="about.html">About</a>
+							</li>
+							<li>
+								<a href="blog.html">Blog</a>
+							</li>
+							<li>
+								<a href="Mon_CV.html">Mon CV</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="footnote"> &copy; Copyright &copy; 2016 www.Bahizi.net all rights reserved </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
