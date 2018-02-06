@@ -6,4 +6,5 @@ urlpatterns = [
 	url(r'^hello/', views.hello, name = 'hello'),
 	url(r'^$', views.post_list, name='post_list'),
 	url(r'^Mon_CV.html', views.mon_cv, name='mon_cv'),
+	url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
 ]
